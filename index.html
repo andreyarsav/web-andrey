@@ -1,122 +1,154 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrey Arsavin | Personal Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andrey Store</title>
+<style>
+  /* Animasi background */
+  body {
+    margin:0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-45deg,#FFA500,#32CD32,#FF4500,#00FA9A);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color:#333;
+  }
+  @keyframes gradientBG {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+  }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #141E30, #243B55);
-            color: white;
-        }
+  header {
+    background-color:#FFA500; /* oranye Shopee */
+    color:white;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+  }
 
-        header {
-            text-align: center;
-            padding: 80px 20px;
-        }
+  header h1 {
+    margin:0;
+  }
 
-        header h1 {
-            font-size: 45px;
-            margin: 0;
-        }
+  nav {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:10px;
+  }
 
-        header p {
-            font-size: 18px;
-            opacity: 0.8;
-        }
+  nav a {
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+  }
 
-        nav {
-            background: rgba(0,0,0,0.5);
-            text-align: center;
-            padding: 15px;
-        }
+  nav a:hover {
+    color:#32CD32; /* hijau J&T */
+  }
 
-        nav a {
-            color: #1abc9c;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+  main {
+    padding:20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+  }
 
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 50px 20px;
-        }
+  .card {
+    background-color:white;
+    border-radius:12px;
+    width:250px;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+  }
 
-        .card {
-            background: rgba(0,0,0,0.4);
-            padding: 25px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-        }
+  .card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+  }
 
-        h2 {
-            color: #1abc9c;
-        }
+  .card img {
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid #32CD32;
+  }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0,0,0,0.6);
-        }
-    </style>
+  .btn {
+    display:inline-block;
+    padding:10px 20px;
+    margin-top:10px;
+    background-color:#32CD32;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:0.3s;
+  }
+
+  .btn:hover {
+    background-color:#228B22;
+  }
+
+  footer {
+    background-color:#FFA500;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+  }
+
+</style>
 </head>
-
 <body>
 
 <header>
-    <h1>Andrey Arsavin</h1>
-    <p>Kelas 11 TKJ 1 | SMK PGRI 6 Surabaya</p>
+  <h1>Andrey Store</h1>
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#hobi">Hobi</a>
+    <a href="#produk">Gallery</a>
+  </nav>
 </header>
 
-<nav>
-    <a href="#about">Tentang</a>
-    <a href="#education">Pendidikan</a>
-    <a href="#hobby">Hobi</a>
-    <a href="#contact">Kontak</a>
-</nav>
+<main>
+  <div class="card" id="profil">
+    <img src="LINK_FOTO_KAMU" alt="Foto Andrey Arsavin">
+    <h2>Profil</h2>
+    <p><strong>Nama:</strong> Andrey Arsavin</p>
+    <p><strong>Kelas:</strong> 11 TKJ 1</p>
+    <p><strong>Sekolah:</strong> SMK PGRI 6 Surabaya</p>
+    <p><strong>Alamat:</strong> Surabaya, Jl Kedung Mangu GG 2 H</p>
+    <a href="#" class="btn">Lihat Profil</a>
+  </div>
 
-<section id="about">
-    <div class="card">
-        <h2>Tentang Saya</h2>
-        <p>Halo! Nama saya Andrey Arsavin. Saya adalah siswa kelas 11 TKJ 1 di SMK PGRI 6 Surabaya.</p>
-        <p>Saya memiliki minat besar di bidang teknologi, jaringan komputer, dan pengembangan website.</p>
-        <p>Saya tinggal di Surabaya, Indonesia.</p>
-    </div>
-</section>
+  <div class="card" id="hobi">
+    <h2>Hobi & Minat</h2>
+    <ul>
+      <li>Memelihara ikan cupang</li>
+      <li>Memelihara ikan lain</li>
+      <li>Suka warna hijau & orange</li>
+    </ul>
+    <a href="#" class="btn">Detail Hobi</a>
+  </div>
 
-<section id="education">
-    <div class="card">
-        <h2>Pendidikan</h2>
-        <p>SMK PGRI 6 Surabaya</p>
-        <p>Jurusan Teknik Komputer dan Jaringan (TKJ)</p>
-        <p>Kelas 11 TKJ 1</p>
-    </div>
-</section>
-
-<section id="hobby">
-    <div class="card">
-        <h2>Hobi</h2>
-        <p>Saya hobi memelihara ikan cupang dan berbagai jenis ikan lainnya.</p>
-        <p>Saya juga suka belajar hal baru tentang teknologi dan sistem komputer.</p>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="card">
-        <h2>Lokasi</h2>
-        <p>Surabaya, Jawa Timur, Indonesia</p>
-    </div>
-</section>
+  <div class="card" id="produk">
+    <h2>Gallery Ikan Cupang</h2>
+    <img src="LINK_FOTO_1" alt="Ikan Cupang 1">
+    <img src="LINK_FOTO_2" alt="Ikan Cupang 2">
+    <a href="#" class="btn">Lihat Semua</a>
+  </div>
+</main>
 
 <footer>
-    <p>© 2026 Andrey Arsavin. All Rights Reserved.</p>
+  © 2026 Andrey Arsavin - Web E-Commerce Ala Shopee & J&T
 </footer>
 
 </body>
 </html>
-
