@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Andrey Store</title>
+<title>Andrey Arsavin</title>
 <style>
-  /* Animasi background */
   body {
     margin:0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(-45deg,#FFA500,#32CD32,#FF4500,#00FA9A);
+    background: linear-gradient(-45deg, #FFA500, #32CD32, #FF4500, #00FA9A);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
     color:#333;
   }
+
   @keyframes gradientBG {
     0%{background-position:0% 50%;}
     50%{background-position:100% 50%;}
@@ -21,15 +21,11 @@
   }
 
   header {
-    background-color:#FFA500; /* oranye Shopee */
+    background-color:#FFA500;
     color:white;
     padding:20px;
     text-align:center;
     box-shadow:0 4px 10px rgba(0,0,0,0.3);
-  }
-
-  header h1 {
-    margin:0;
   }
 
   nav {
@@ -47,7 +43,7 @@
   }
 
   nav a:hover {
-    color:#32CD32; /* hijau J&T */
+    color:#32CD32;
   }
 
   main {
@@ -73,14 +69,6 @@
     box-shadow:0 10px 20px rgba(0,0,0,0.3);
   }
 
-  .card img {
-    width:150px;
-    height:150px;
-    object-fit:cover;
-    border-radius:10px;
-    border:2px solid #32CD32;
-  }
-
   .btn {
     display:inline-block;
     padding:10px 20px;
@@ -104,50 +92,55 @@
     margin-top:30px;
   }
 
+  .message {
+    background-color: #fff3cd;
+    color:#856404;
+    border-left: 6px solid #ffeeba;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;
+    width:100%;
+    max-width:600px;
+    text-align:center;
+    font-weight:bold;
+  }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Andrey Store</h1>
+  <h1>Andrey Arsavin</h1>
   <nav>
     <a href="#profil">Profil</a>
-    <a href="#hobi">Hobi</a>
-    <a href="#produk">Gallery</a>
+    <a href="#shortcut">Shortcut</a>
+    <a href="#pesan">Pesan</a>
   </nav>
 </header>
 
 <main>
   <div class="card" id="profil">
-    <img src="LINK_FOTO_KAMU" alt="Foto Andrey Arsavin">
-    <h2>Profil</h2>
+    <h2>Profil Singkat</h2>
     <p><strong>Nama:</strong> Andrey Arsavin</p>
     <p><strong>Kelas:</strong> 11 TKJ 1</p>
     <p><strong>Sekolah:</strong> SMK PGRI 6 Surabaya</p>
     <p><strong>Alamat:</strong> Surabaya, Jl Kedung Mangu GG 2 H</p>
-    <a href="#" class="btn">Lihat Profil</a>
+    <a href="#shortcut" class="btn">Lihat Shortcut</a>
   </div>
 
-  <div class="card" id="hobi">
-    <h2>Hobi & Minat</h2>
-    <ul>
-      <li>Memelihara ikan cupang</li>
-      <li>Memelihara ikan lain</li>
-      <li>Suka warna hijau & orange</li>
-    </ul>
-    <a href="#" class="btn">Detail Hobi</a>
+  <div class="card" id="shortcut">
+    <h2>Shortcut Cepat</h2>
+    <a href="#pesan" class="btn">Pesan Penting</a>
+    <a href="#profil" class="btn">Profil</a>
+    <a href="#top" class="btn">Kembali ke Atas</a>
   </div>
 
-  <div class="card" id="produk">
-    <h2>Gallery Ikan Cupang</h2>
-    <img src="LINK_FOTO_1" alt="Ikan Cupang 1">
-    <img src="LINK_FOTO_2" alt="Ikan Cupang 2">
-    <a href="#" class="btn">Lihat Semua</a>
+  <div class="card message" id="pesan">
+    Tinggalkan sholat percuma hidup seribu tahun walau tidak sembahyang apa guna nya
   </div>
 </main>
 
 <footer>
-  © 2026 Andrey Arsavin - Web E-Commerce Ala Shopee & J&T
+  © 2026 Andrey Arsavin - Web Profesional
 </footer>
 
 </body>
